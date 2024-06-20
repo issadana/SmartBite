@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; 
+}
+
+body {
+  background-color: rgb(229, 229, 229); /* Change to desired background color */
+  font-family: 'Poppins', sans-serif; 
+
+}
+
+label {
+  display: block; /* Display labels as block elements */
+  margin-bottom: 5px; /* Add spacing between labels and input boxes */
+  text-align: left; /* Align labels to the left */
+  margin-left: 10px;
+}
+
+
+header {
+  display: flex; /* Display items in a flex container */
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Distribute items along the main axis */
+  padding: 10px 20px; /* Add padding to the header */
+  background-color: white; /* Change to desired background color */
+}
+
+/* Logo styles */
+.logo {
+  display: flex; /* Display items in a flex container */
+  align-items: center; /* Vertically center items */
+}
+
+/* Logo image styles */
+.logo img {
+  width: 80px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Logo text styles */
+.logo a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Change to desired text color */
+  font-size: 30px; /* Adjust font size as needed */
+  margin-left: 10px; /* Add spacing between logo and text */
+}
+
+/* Navigation bar styles */
+#nav-bar {
+  flex-grow: 1; /* Expand to fill remaining space */
+}
+
+/* Navigation list styles */
+#nav-bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display items in a flex container */
+  justify-content: center; /* Center items along the main axis */
+}
+
+/* Navigation link styles */
+.nav-link {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Change to desired text color */
+  font-size: 20px; /* Adjust font size as needed */
+  font-family: 'Poppins', sans-serif; 
+  margin: 0 20px; /* Add spacing between navigation items */
+  transition: box-shadow 0.3s; /* Add smooth transition effect */
+
+}
+
+.nav-link:hover {
+  color: rgb(0, 128, 74);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3); /* Adjust shadow color and size as needed */
+  border-bottom: 5px solid #333;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .logo img {
+    width: 100px; /* Adjust width for smaller screens */
+  }
+  
+  .logo a {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+  
+  .nav-link {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+.box h1 {
+  font-weight: normal;
+}
+
+/* Ensure labels in form fields are not bold */
+label {
+  font-weight: normal;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+input,
+textarea {
+  margin: 4px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+.box{
+  width: 450px;
+  margin: 0px 10px;
+}
+.box header{
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+}
+.box form .field{
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+
+}
+.box form .input input{
+  
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.btn{
+  height: 40px;
+  background: rgb(0, 128, 74);
+  border: 0;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .3s;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.btn:hover{
+  opacity: 0.82;
+}
+.submit{
+  width: 100%;
+}
+.links{
+  margin-bottom: 15px;
+}
+.field.input {
+position: relative; /* Set the parent container to relative */
+}
+
+.field.input i {
+position: absolute;
+top: 68%;
+left: 15px;
+transform: translateY(-50%);
+font-size: 20px;
+color: #ccc;
+}
+
+/* Adjust icon size and color on focus */
+.field.input input:focus + i {
+color: #333;
+opacity: 0; /* Make icon invisible when focused */
+}
+
+/* -------------------------------------------------------------------- */

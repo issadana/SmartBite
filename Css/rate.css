@@ -1,0 +1,65 @@
+.rate {
+    background: var(--white);
+    padding: 2rem;
+    max-width: 576px;
+    width: 100%;
+    border-radius: .75rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: .5rem;
+    font-size: 2rem;
+    color: yellow;
+    margin-bottom: 2rem;
+  }
+
+  .rating .star {
+    cursor: pointer;
+  }
+
+  .rating .star.active {
+    opacity: 0;
+    animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+  }
+  
+  @keyframes animate {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
+  
+  
+  .rating .star:hover {
+    transform: scale(1.1);
+    color: yellow;
+  }
+  
+  .btn{
+    height: 40px;
+    background: rgb(0, 128, 74);
+    border: 0;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+  }
+  .btn:hover{
+    opacity: 0.82;
+  }

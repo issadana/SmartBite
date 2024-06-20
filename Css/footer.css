@@ -1,0 +1,35 @@
+.footercontainer {
+    min-height: calc(100% - 80px); /* Adjusted to leave space for the footer (assuming 80px height) */
+    position: relative;
+    padding-bottom: 80px; /* Added padding to ensure space for the footer */
+}
+footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+background-color: rgb(0, 128, 74);
+padding: 20px;
+}
+
+footer a {
+text-decoration: none;
+color: white;
+}
+
+footer > ul {
+display: flex;
+justify-content: flex-end;
+list-style-type: none;
+}
+
+footer > ul > li {
+padding: 0 10px;
+}
+
+footer > span {
+margin-top: 5px;
+display: flex;
+justify-content: flex-end;
+font-size: 0.9em;
+color: white;
+}
